@@ -1,0 +1,33 @@
+<div class="button_content">
+  <button mat-button (click)="showModalADD()">Agregar</button>
+  <button mat-button (click)="verCarrito()"><i class="bi bi-cart3" id="carIcon"></i></button>
+</div>
+<div class="main_container">
+  <div *ngFor="let item of product">
+    <div class="card_container">
+      <div class="content_img">
+        <img [src]="item.image" alt="">
+      </div>
+      <h2>{{item.title}}</h2>
+      <div class="content_id_price">
+        <h3>ID:{{item.id}}</h3>
+        <p id="price">$:{{item.price}}</p>
+      </div>
+      <div class="content_category">
+        <p>Category:{{item.category}}</p>
+      </div>
+      <div class="content_description">
+        <p>{{item.description}}</p>
+      </div>
+      <div class="content_rate_price">
+        <p>Rate:{{item.rating.rate}}</p>
+        <p>Disponible:{{item.rating.count}}</p>
+      </div>
+
+      <div class="button_content">
+        <button mat-button (click)="showInfo(item.id)">+ Info</button>
+      </div>
+
+    </div>
+  </div>
+</div>

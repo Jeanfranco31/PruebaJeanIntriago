@@ -1,0 +1,27 @@
+
+    <form [formGroup]="form" (submit)="enviar()">
+        <mat-form-field class="form_content">
+            <mat-label>Titulo:</mat-label>
+            <input matInput formControlName="title">
+        </mat-form-field>
+        <mat-form-field class="form_content">
+            <mat-label>Precio:</mat-label>
+            <input matInput formControlName="price">
+        </mat-form-field>
+        <mat-form-field class="form_content">
+            <mat-label>Descripcion:</mat-label>
+            <input matInput formControlName="description">
+        </mat-form-field>
+        <mat-form-field class="form_content">
+            <mat-label>Imagen url:</mat-label>
+            <input matInput formControlName="image">
+        </mat-form-field>
+        <mat-form-field class="form_content">
+            <mat-label>Categoria:</mat-label>
+            <input matInput formControlName="category">
+        </mat-form-field>
+
+        <button mat-raised-button class="btn btn-primary">
+            Guardar
+        </button>
+    </form>

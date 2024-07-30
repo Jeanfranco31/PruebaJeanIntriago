@@ -1,0 +1,19 @@
+.main_content_info{
+    display: flex;
+    flex-direction: row;
+}
+
+.content_image{
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+.content_image img{
+    position: absolute;
+    width:60%;
+}
+
+.content_data{
+    width: 60%;
+    height: 100%;
+}

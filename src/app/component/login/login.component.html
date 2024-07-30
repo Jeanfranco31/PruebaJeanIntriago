@@ -1,0 +1,16 @@
+<div class="login-container">
+    <h2>Login</h2>
+    <form [formGroup]="form" (submit)="validarLogin()">
+      <div class="email">
+        <label for="username">Correo:</label>
+        <input id="username" formControlName="correo" name="correo" required>
+      </div>
+      <div class="pass">
+        <label for="password">Clave:</label>
+        <input id="password" type="password" formControlName="clave" name="password" required>
+      </div>
+      <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+      <button type="submit">Iniciar sesion</button>
+    </form>
+</div>
+  
